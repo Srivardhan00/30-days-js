@@ -7,6 +7,7 @@ const printN = (n) => {
   }
 };
 printN(10);
+
 // Task 2: Write a program to print the multiplication table of 5 using a for loop.
 const printTable = (n) => {
   for (let i = 1; i < 11; i++) {
@@ -27,7 +28,7 @@ const sumOfN = (n) => {
   }
   console.log("Sum of", n, "numbers is", sum);
 };
-sumOfN(10);
+sumOfN(10); // Sum of 10 numbers is 55
 
 // Task 4: Write a program to print numbers from 10 to 1 using a while loop.
 const printNInRev = (n) => {
@@ -60,7 +61,7 @@ const fact = (n) => {
   } while (i <= n);
   console.log("Factorial of", n, "is", fact);
 };
-fact(5);
+fact(5); // // Factorial of 5 is 120
 
 // Activity 4: Nested Loops
 // Task 7: Write a program to print a pattern using nested for loops.
@@ -73,6 +74,15 @@ const printPattern = (n) => {
   }
 };
 printPattern(5);
+
+/*
+Output : 
+*
+* *
+* * *
+* * * *
+* * * * *
+*/
 
 // Activity 5: Loop Control Statements
 // Task 8: Write a program to print numbers from 1 to 10, but skip the number 5 using the continue statement.
