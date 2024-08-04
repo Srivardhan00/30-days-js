@@ -1,0 +1,9 @@
+.wd {
+    width: 250px;
+}
+.visibility{
+    opacity: 0;
+}
+#task3{
+    background-color: red;
+}
