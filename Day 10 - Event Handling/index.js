@@ -13,6 +13,7 @@ btn.addEventListener("click", () => {
     : (p.innerHTML = "lorem ipsum");
 });
 
+
 // Task 2: Add a double-click event listener to an image that toggles its visibility.
 const img = document.querySelector("#img1");
 
