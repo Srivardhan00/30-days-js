@@ -104,3 +104,35 @@ const p2 = new Person2("abc", "xyz", 45);
 console.log(p2.fullName); // Access getter directly as a property
 p2.fullName = "Abz pqs"; // Use setter to update
 console.log(p2.fullName); // Check updated name
+
+// Activity 5: Private Fields (Optional)
+// Task 9: Define a class Account with private fields for balance and a method to deposit and withdraw money. Ensure that the balance can only be updated through these methods.
+// Task 10: Create an instance of the Account class and test the deposit and withdraw methods, logging the balance after each operation.
+
+class Account {
+  #balance; // Private field to hold the balance
+  // Constructor to initialize the balance to 0
+  constructor() {
+    this.#balance = 0;
+  }
+
+  // Method to deposit money and update the balance
+  deposit(amt) {
+    this.#balance += amt;
+    this.getBalance();
+  }
+
+  // Method to withdraw money and update the balance
+  withdraw(amt) {
+    this.#balance -= amt;
+    this.getBalance();
+  }
+
+  getBalance() {
+    console.log(`Current Balance = ${this.#balance}`);
+  }
+}
+
+const act = new Account();
+act.deposit(500);
+act.withdraw(40);
